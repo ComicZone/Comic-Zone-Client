@@ -1,0 +1,17 @@
+.categories {
+  min-height: 100px;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  margin :40px 0;
+}
+
+.individual-slides {
+  margin: 0 10px;
+}
+
+.individual-slides .slide-text {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+}
