@@ -23,7 +23,7 @@ If this is your first time here, first clone this repository if not skip this st
 then 
    
    ```sh
-   cd Comic-Zone-Client && npm i
+   cd Comic-Zone-Client
    ```
 These are the steps to take:
 
@@ -31,7 +31,7 @@ If you are working on a page/feature for e.g Cart,
 
 1. Check out to develop branch (git checkout develop)
    ```sh
-   git checkout develop
+   git checkout develop && npm i
    ```
 
 2. Create your own branch. (git checkout -b cart). That command also checks out into the cart branch.
