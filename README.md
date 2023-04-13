@@ -1,5 +1,8 @@
 # Comic-Zone-Client
 
+## Figma
+[FIGMA DESIGN](https://www.figma.com/file/ruQRvOxiSGHeJRbu6sug95/Scrum---Comic-gallery?node-id=1-2&t=1aDQztMobeLa3Oza-0)
+
 ## Contribution
 <br />
 We are working with a 3 branch structure: **Main, Develop and Features.**
