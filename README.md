@@ -1,7 +1,6 @@
 # Comic-Zone-Client
 
 ## Contribution
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
 <br />
 We are working with a 3 branch structure: **Main, Develop and Features.**
 <br />
