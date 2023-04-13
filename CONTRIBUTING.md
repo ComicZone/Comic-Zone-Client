@@ -54,3 +54,4 @@ If you are working on a page/feature for e.g Cart,
 6. Choose the branches you want to merge, 
 7. making sure that you're merging _cart_ branch into _develop_. (please verify that the branch you want to merge to is _develop_. )
 8. You can drop comments on the pull request. I will look at it and then merge it into _develop_
+9. If you are experiencing any issues contact Adaobi or Charles or Ifechi
