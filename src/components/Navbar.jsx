@@ -8,6 +8,8 @@ import {User} from "phosphor-react";
 const Navbar = () => {
  return(
     <div className="navbar ">
+
+      
         <form className="search-container">
         <input type="text" placeholder="Search" />
         <button type="submit"><MagnifyingGlass size={32}/></button>
