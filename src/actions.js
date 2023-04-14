@@ -1,0 +1,30 @@
+//User Actions
+export const REQUEST_LOGIN = "REQUEST_LOGIN";
+export const LOGIN_SUCCESS = "REQUEST_LOGIN";
+export const LOGIN_ERROR = "REQUEST_LOGIN";
+export const USER_LOGOUT = "REQUEST_LOGIN";
+export const USER_DETAILS = "REQUEST_LOGIN";
+export const USER_DETAILS_BEGIN = "REQUEST_LOGIN";
+export const USER_DETAILS_ERROR = "REQUEST_LOGIN";
+export const REGISTER_USER = "REQUEST_LOGIN";
+export const ADD_BOOK = "ADD_BOOK";
+export const ADD_BOOK_SUCCESS = "ADD_BOOK_SUCCESS";
+export const ADD_BOOK_ERROR = "ADD_BOOK_ERROR";
+
+//Store/book Actions
+export const GET_STORE_BEGIN = "GET_STORE_BEGIN";
+export const GET_STORE_SUCCESS = "GET_STORE_SUCCESS";
+export const GET_STORE_ERROR = "GET_STORE_ERROR";
+export const GET_BOOK_BEGIN = "GET_BOOK_BEGIN";
+export const GET_BOOK_SUCCESS = "GET_BOOK_SUCCESS";
+export const GET_BOOK_ERROR = "GET_BOOK_ERROR";
+export const ACCESS_BOOK = "ACCESS_BOOK";
+export const ACCESS_BOOK_SUCCESS = "ACCESS_BOOK_SUCCESS";
+export const ACCESS_BOOK_ERROR = "ACCESS_BOOK_ERROR";
+
+//Cart Actions
+export const ADD_TO_CART = "ADD_TO_CART";
+export const CLEAR_CART = "CLEAR_CART";
+export const COUNT_CART_TOTALS = "COUNT_CART_TOTALS";
+export const REMOVE_CART_ITEM = " REMOVE_CART_ITEM";
+export const TOGGLE_CART_ITEM_AMOUNT = "TOGGLE_CART_ITEM_AMOUNT";
