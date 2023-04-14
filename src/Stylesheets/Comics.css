@@ -1,0 +1,70 @@
+:root {
+  --yellow-color: #fec701;
+  --light-gray: #fefcea;
+}
+
+.latest-comics-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.latest-comic-lead-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.latest-comics-header .latest-comic-sub-text {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+}
+
+.latest-comics-header .latest-comic-sub-text:hover {
+  color: #c15858;
+}
+
+/* Latest Comics Banner Section */
+.latest-comics-banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left-banner {
+  background-color: var(--light-gray);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+  border: 1px solid red;
+}
+
+.yellow-banner-image {
+  border: 1px solid red;
+  background-color: var(--yellow-color);
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+}
+
+.banner-image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 350px;
+  width: 350px;
+}
+
+.banner-image img {
+  width: 100%;
+  width: 100%;
+  padding: 2rem;
+}

@@ -31,17 +31,22 @@ function Preview() {
                 the president in cold day. One of the biggest status quo change
                 is years is here! Read more..
               </p>
-              <Button name="Add to cart"/>
-              <Button name="Price $100  Buy"/>
+              <Button name="Add to cart" />
+              <Button name="Price $100  Buy" />
             </div>
           </div>
         </div>
       </div>
       <div className="Review">
         <h2>Customers Reviews</h2>
-        <Review name="James Okoye" date="November 12 2022" content=" change is years is here!Deadly republic is back! but what happens change is years is 
+        <Review
+          name="James Okoye"
+          date="November 12 2022"
+          content=" change is years is here!Deadly republic is back! but what happens change is years is 
             here!Deadly republic is back! but what happens when the scary beast planned to execute 
-            the president in cold day. One of the biggest" color="pink"/>
+            the president in cold day. One of the biggest"
+          color="pink"
+        />
       </div>
     </div>
   );
