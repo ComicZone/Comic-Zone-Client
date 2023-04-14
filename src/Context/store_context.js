@@ -12,7 +12,6 @@ import {
   ACCESS_BOOK_SUCCESS,
   ACCESS_BOOK_ERROR,
 } from "../actions";
-import { url } from "../utils/constant";
 import { baseUrl } from "../utils/baseUrl";
 
 const StoreContext = React.createContext();
@@ -58,6 +57,7 @@ export const StoreProvider = ({ children }) => {
   };
 
   const accessBook = async (bookID) => {
+    const url = 'https://'
     dispatch({ type: ACCESS_BOOK });
     try {
       const response = await axios.get(`${url}${bookID}`);

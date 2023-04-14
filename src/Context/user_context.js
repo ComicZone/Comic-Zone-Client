@@ -1,7 +1,5 @@
 import React, { useContext, useReducer } from "react";
 import reducer from "../Reducers/user_reducer";
-import { url } from "../utils/constant";
-import { baseUrl } from "../utils/baseUrl";
 import axios from "axios";
 import {
   REQUEST_LOGIN,
@@ -16,6 +14,7 @@ import {
   ADD_BOOK_ERROR,
   ADD_BOOK_SUCCESS,
 } from "../actions";
+import { baseUrl } from "../utils/baseUrl";
 
 let token = localStorage.getItem("currentUser")
   ? JSON.parse(localStorage.getItem("currentUser")).token
@@ -38,6 +37,7 @@ const UserContext = React.createContext();
 
 export const UserProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const url = 'https://'
 
   const registerUser = async (data) => {
     dispatch({ type: REGISTER_USER });
