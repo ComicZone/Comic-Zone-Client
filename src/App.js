@@ -9,13 +9,13 @@ import Preview from "./Pages/Preview";
 function App() {
   return (
     <div className="App">
-      <Router>
+      { <Router>
         <Navbar/>
         <Error/>
         <Routes>
           <Route path="/" element={<Homepage />} />
         </Routes>
-      </Router>
+      </Router> }
       <Preview/>
     </div>
   );

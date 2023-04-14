@@ -1,6 +1,37 @@
 .left{
-    height: 100px;
-    width: 100px;
+    height: 78px;
+    width: 78px;
+    min-width: 78px;
     /* background-color: blue; */
     border-radius: 50px;
 }
+.right{
+    max-width: 545px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Review{
+    font-family: 'Comic Sans MS';
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2em;
+    /* max-width: 320px; */
+    /* padding: 20px;
+    margin: 60px auto; */
+    border: 1px solid #eee;
+    margin-left: 10%;
+    /* box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06); */
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 844px;
+    height: 146px;
+    left: 51px;
+    top: 1141px; */
+} 
