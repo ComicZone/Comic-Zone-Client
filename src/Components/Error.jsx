@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ErrorImage from "../Assests/404.svg";
+import ErrorImage from "../Assests/images/404.svg";
 import SecondaryButton from "./SecondaryButton";
 
 const Error = () => {
