@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import Homepage from "./Pages/Homepage";
 import Preview from "./Pages/Preview";
 import Error from "./Components/Error";
@@ -38,9 +38,8 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-
         <AppRoutes />
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );
