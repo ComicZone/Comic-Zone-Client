@@ -15,7 +15,11 @@ const Comics = () => {
         <div className="left-banner">
           <div className="yellow-banner-image">
             <div className="banner-image">
-              <img src={dead_republic} classname="dead-republic" alt="dead_republic_comic" />
+              <img
+                src={dead_republic}
+                classname="dead-republic"
+                alt="dead_republic_comic"
+              />
             </div>
             <div className="banner-text">
               <div className="text_prices">

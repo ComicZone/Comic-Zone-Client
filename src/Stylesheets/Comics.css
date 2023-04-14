@@ -4,6 +4,7 @@
 }
 
 .latest-comics-header {
+  font-family: "Comic Sans MS", arial;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,6 +32,7 @@
 .latest-comics-banner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid #131211;
 }
 
 .left-banner {
@@ -41,11 +43,10 @@
   align-items: center;
   flex-direction: column;
   z-index: 10;
-  border: 1px solid red;
+  border-right: 1px solid #131211;
 }
 
 .yellow-banner-image {
-  border: 1px solid red;
   background-color: var(--yellow-color);
   border-radius: 0.5rem;
   margin: 2rem 0;
@@ -59,6 +60,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-radius: 0.5rem;
   height: 350px;
   width: 350px;
 }
@@ -67,4 +69,70 @@
   width: 100%;
   width: 100%;
   padding: 2rem;
+}
+
+.banner-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+  padding: 1rem;
+}
+
+.text_prices {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.banner-btn {
+  background-color: #fb1a1a;
+  color: #fff;
+  font-family: "Comic Sans MS", arial;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  border: 1px solid #fb1a1a;
+  transition: all 0.4s ease-in-out;
+}
+.banner-btn:hover {
+  background-color: #fff;
+  color: #fb1a1a;
+  border: 1px solid #fff;
+}
+
+/* Right-banner section */
+.right-banner {
+  background-color: #feface;
+  text-align: left;
+  padding: 2rem;
+}
+
+.right-banner .realease-date {
+  font-family: "Comic Sans MS", arial;
+  margin: 1rem 0;
+  letter-spacing: 1px;
+}
+
+.right-banner .dead-republic {
+  font-family: "Monument Extended", sans-serif;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.right-banner .description {
+  font-family: "Comic Sans MS", arial;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  margin: 1rem 0;
+}
+
+.right-banner .dead-description {
+  font-family: "Comic Sans MS", arial;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  max-width: 400px;
+  text-align: justify;
 }
