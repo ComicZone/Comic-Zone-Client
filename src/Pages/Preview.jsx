@@ -2,7 +2,7 @@ import img1 from "../Img/Img1.png";
 import style from "./Preview.module.css";
 import Button from "../Components/Button";
 import Review from "../Components/Reviews/Review";
-import Works from "../Components/Works/Works";
+// import Works from "../Components/Works/Works";
 function Preview() {
   return (
     <div className={style.Preview}>
@@ -59,7 +59,7 @@ function Preview() {
       </div>
       <div className="RealtedWorks">
         <h2>Related Works</h2>
-        <Works/>
+        {/* <Works/> */}
       </div>
       </div>
       
