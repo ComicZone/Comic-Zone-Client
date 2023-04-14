@@ -4,13 +4,15 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Homepage from "./Pages/Homepage";
 import Preview from "./Pages/Preview";
+import Error from "./Components/Error";
+
 
 function AppRoutes() {
   const routes = useRoutes([
     { path: "/", element: <Homepage /> },
     { path: "/home", element: <Homepage /> },
     { path: "/preview", element: <Preview /> },
-    // { path: "*", element: <Error /> },
+    { path: "*", element: <Error /> },
 
     // {
     //   element: <Authorize />,
@@ -29,6 +31,7 @@ function AppRoutes() {
   ]);
   return routes;
 }
+
 
 function App() {
   return (

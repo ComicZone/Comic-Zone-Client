@@ -7,6 +7,19 @@
   pointer-events: none;
 }
 
+@font-face {
+  font-family: "Comicy";
+  /*Can be any text*/
+  src: local("Comicy"),
+    url("./Assests/fonts/Comicy.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Monument Extended";
+  /*Can be any text*/
+  src: local("Monument Extended"),
+    url("./Assests/fonts/MonumentExtended.otf") format("opentype");
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -39,4 +52,20 @@
 
 button{
   cursor: pointer;
+}
+a,button{
+  cursor: pointer;
+}
+
+a:hover{
+  text-decoration: underline;
+  transform: scale(1.02);
+  color: #FFC700;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: inherit;
 }
