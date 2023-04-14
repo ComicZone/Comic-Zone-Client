@@ -1,0 +1,23 @@
+.summary-cont{
+    width: 100%;
+    height: 100vh;
+    display:flex ;
+    position: relative;
+    flex-direction: row;
+}
+.summary-cont .summary-prog{
+    flex: 50%;
+    max-width: 50%;
+    background-color: aqua;
+    color: #fff;
+    height: 100%;
+}
+.summary-cont .summary-prog ul {
+    margin: 0;
+    padding: 0;
+}
+
+.summary-cont .order-summary{
+    flex: 50%;
+    
+}
