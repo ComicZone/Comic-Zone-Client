@@ -2,23 +2,26 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { MagnifyingGlass, ShoppingCart } from "phosphor-react";
-import {User} from "phosphor-react";
+import Logo from "./Images/Logo.png"
+import Badge from "./Images/Badge.png"
+
+
 
 
 const Navbar = () => {
  return(
-    <div className="navbar ">
+    <div className="navbar">
 
-      
-        <form className="search-container">
-        <input type="text" placeholder="Search" />
-        <button type="submit"><MagnifyingGlass size={32}/></button>
-      </form>
+    <img src={Logo} alt="Logo" className="logo" />
+        <div className="search-container">
+        <input type="text" placeholder="Search comics" />
+        <MagnifyingGlass size={32} className="icon"/>
+      </div>
 
         <div className="links">
 
         <Link to="/">
-           <User size={32}/>
+        <img src={Badge} alt="Logo" className="logo" />
         </Link>
         <Link to="/cart">
             <ShoppingCart size={32}/>
