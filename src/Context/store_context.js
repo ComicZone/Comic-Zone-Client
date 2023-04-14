@@ -12,7 +12,7 @@ import {
   ACCESS_BOOK_SUCCESS,
   ACCESS_BOOK_ERROR,
 } from "../actions";
-import { baseUrl } from "../utils/baseUrl";
+import { baseUrl } from "../Utils/baseUrl";
 
 const StoreContext = React.createContext();
 
