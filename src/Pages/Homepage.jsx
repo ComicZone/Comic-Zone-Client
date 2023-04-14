@@ -1,12 +1,12 @@
 import React from "react";
 import Banner from "../Components/Banner";
-import CheckoutButton from "../Components/CheckoutButton";
+// import CheckoutButton from "../Components/CheckoutButton";
 
 const Homepage = () => {
   return (
     <main>
       <Banner />
-      <CheckoutButton amount={'5.99'}/>
+      {/* <CheckoutButton amount={'5.99'}/> */}
     </main>
   );
 };
