@@ -50,6 +50,10 @@
   }
 }
 
+body{
+  min-width: 100vh;
+}
+
 a,button{
   cursor: pointer;
 }
