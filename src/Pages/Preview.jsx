@@ -8,7 +8,7 @@ function Preview() {
     <div className={style.Preview}>
       <div className="Home">
         <div className={style.Home}>
-          <h2>Home/Preview</h2>
+          {/* <h2>Home/Preview</h2> */}
         </div>
         <div className={style.Grid}>
           <div className={style.left}>
