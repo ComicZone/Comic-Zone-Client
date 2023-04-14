@@ -1,9 +1,11 @@
-.banner {
+.banner-container {
+  font-family: "Monument Extended";
   min-height: 100px;
   width: 100%;
   background-color: #000000;
   color: #ffffff;
-  margin :40px 0;
+  margin: 40px 0;
+  overflow: hidden;
 }
 
 .individual-slides {
@@ -14,4 +16,7 @@
   font-size: 32px;
   font-weight: 800;
   color: #ffffff;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
 }

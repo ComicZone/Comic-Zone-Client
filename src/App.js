@@ -4,6 +4,7 @@ import Homepage from "./Pages/Homepage";
 import Navbar from "./Components/Navbar";
 // import Footer from "./Components/Footer";
 import Error from "./Components/404";
+import Preview from "./Pages/Preview";
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
         </Routes>
-       
       </Router>
+      <Preview/>
     </div>
   );
 }
