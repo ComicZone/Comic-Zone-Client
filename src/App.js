@@ -38,7 +38,8 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-          <AppRoutes />
+
+        <AppRoutes />
         <Footer />
       </Router>
     </div>
