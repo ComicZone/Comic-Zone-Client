@@ -14,8 +14,15 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Homepage from "./Pages/Homepage";
 import Preview from "./Pages/Preview";
+import Card from "./Components/Card";
+import Books from "./Components/Books";
 import Error from "./Components/Error";
+<<<<<<< HEAD
 >>>>>>> ee3358be43bc9ad316f60aecf8eff3c3e16f2dfb
+=======
+// import Profile from "./Pages/Profile";
+import Layout from "./Components/Layout";
+>>>>>>> develop
 
 function AppRoutes() {
   const routes = useRoutes([
@@ -23,10 +30,14 @@ function AppRoutes() {
     { path: "/home", element: <Homepage /> },
     { path: "/preview", element: <Preview /> },
 <<<<<<< HEAD
+<<<<<<< HEAD
     // { path: "*", element: <Error /> },
     {path: "/signup", element: <SignUp />},
     {path: "/login", element: <Login />}
 =======
+=======
+    // { path: "/profile", element: <Profile /> },
+>>>>>>> develop
     { path: "*", element: <Error /> },
 >>>>>>> ee3358be43bc9ad316f60aecf8eff3c3e16f2dfb
 
@@ -58,14 +69,20 @@ function AppRoutes() {
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
       <Router>
 <<<<<<< HEAD
         {/* <Navbar /> */}
           <AppRoutes />
         {/* <Footer /> */}
 =======
+=======
+      <Router>    
+>>>>>>> develop
         <Navbar />
-        <AppRoutes />
+        <Layout>
+          <AppRoutes />
+        </Layout>
         <Footer />
 >>>>>>> ee3358be43bc9ad316f60aecf8eff3c3e16f2dfb
       </Router>
