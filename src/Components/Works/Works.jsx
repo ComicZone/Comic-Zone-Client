@@ -1,5 +1,5 @@
 import style from "./Works.module.css";
-import Button from "../Button";
+// import Button from "../Button";
 import img2 from "../../Img/Img2.png";
 function Works({ name, genre, price, rating }) {
     return (

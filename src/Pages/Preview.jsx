@@ -41,7 +41,11 @@ function Preview() {
         </div>
       </div>
       <div className={style.section2}>
-      <div className={style.Review}>
+      {/* <div className={style.Review}>
+        <h2>Customers Reviews</h2> */}
+        {/* <Review name="James Okoye" date="November 12 2022" content=" change is years is here!Deadly republic is back! but what happens change is years is  */}
+      <div className="Section2">
+        <div className={style.Review}>
           <h2>Customers Reviews</h2>
           <Review
             name="James Okoye"
@@ -82,11 +86,7 @@ function Preview() {
             here!Deadly republic is back! but what happens when the scary beast planned to execute 
             the president in cold day. One of the biggest"
             color="brown"
-          />
-        </div>
-        <div className="RealtedWorks">
-          <h2>Related Works</h2>
-          {/* <Works/> */}
+         />
         </div>
       </div>
       <div className="Realted Works">
@@ -97,7 +97,9 @@ function Preview() {
         <Works name="Peaceful Rath" genre="Thrill/ Drama/ Sci-Fi" price="$100" />
       </div>
       </div>
+      </div>
       
+    // </div>
   );
 }
 
