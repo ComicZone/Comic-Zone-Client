@@ -1,15 +1,16 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { MagnifyingGlass, ShoppingCart } from "phosphor-react";
+import { MagnifyingGlass, ShoppingCart,BellSimpleRinging } from "phosphor-react";
 import Logo from "./Images/Logo.png"
-import Badge from "./Images/Badge.png"
+import User from "./Images/User.png"
 
 
 
 
-const Navbar = () => {
-  
+const Rnavbar = () => {
+    const isLoggedIn = props.isLoggedIn;
+   
  return(
     <div className="navbar">
 
@@ -22,8 +23,15 @@ const Navbar = () => {
         <div className="links">
 
         <Link to="/">
-        <img src={Badge} alt="Logo" className="logo" />
+        <BellSimpleRinging size={32}/>
         </Link>
+        <Link to="/cart">
+            <ShoppingCart size={32}/>
+        </Link>
+        <Link to="/profile">
+        <img src={User} alt="Logo" className="logo" />
+        </Link>
+
         
         </div>
     
@@ -31,4 +39,4 @@ const Navbar = () => {
  )
 };
 
-export default Navbar;
+export default Rnavbar;
