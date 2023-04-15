@@ -1,0 +1,205 @@
+.BookCard {
+    height: 250px;
+    width: 250px;
+    left: 50px;
+    top: 295px;
+    border-radius: 15px;
+    margin-top: 100px;
+    background-image: url(/public/HeroImages/two.png);
+    background-size: contain;
+    /* border: 1px solid red; */
+}
+
+.BookCard2 {
+    /* border: 1px solid red; */
+    height: 250px;
+    width: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    left: 50px;
+    top: 295px;
+    border-radius: 15px;
+    margin-top: 100px;
+    background-image: url(/public/HeroImages/two.png);
+    background-size: contain;
+    /* border: 1px solid red; */
+}
+
+.BookCard3 {
+    height: 250px;
+    width: 250px;
+    /* left: 50px;
+    top: 295px; */
+    border-radius: 15px;
+    margin-top: 100px;
+    background-image: url(/public/HeroImages/two.png);
+    background-size: contain;
+    /* object-fit: contain; */
+    border: 1px solid red;
+}
+
+.BookCard4 {
+    height: 250px;
+    width: 250px;
+    left: 50px;
+    top: 295px;
+    border-radius: 15px;
+    margin-top: 100px;
+    background-image: url(/public/HeroImages/two.png);
+    background-size: contain;
+    /* border: 1px solid red; */
+}
+
+.BookCard5 {
+    height: 250px;
+    width: 250px;
+    left: 50px;
+    top: 295px;
+    border-radius: 15px;
+    margin-top: 100px;
+    background-image: url(/public/HeroImages/two.png);
+    background-size: contain;
+    /* border: 1px solid red; */
+}
+
+.BookCard6 {
+    height: 250px;
+    width: 250px;
+    left: 50px;
+    top: 295px;
+    border-radius: 15px;
+    margin-top: 100px;
+    background-image: url(/public/HeroImages/two.png);
+    background-size: contain;
+    /* border: 1px solid red; */
+}
+
+.middle {
+    /* width: 350px; */
+    display: flex;
+    justify-content: center;
+}
+
+.information {
+    height: 45px;
+    width: 280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 200px;
+    background: rgba(0, 19, 47, 0.5);
+    /* border: 1px solid red; */
+}
+
+.fire {
+    color:  #E5F4FF;
+    font-size: 40px
+}
+.FirstContent {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.FirstItem p {
+    color:  #E5F4FF;
+    backdrop-filter: blur(7px)
+}
+
+
+.SecondContent {
+    display: block;
+}
+
+.SecondContent p {
+    color:  #E5F4FF;
+}
+
+.ThirdContent button {
+    height: 40px;
+    width: 80px;
+    color: #000000;
+    font-weight: 700;
+    background: #FFC700;
+    border-radius: 22px;
+    border: none;
+    
+}
+
+.up {
+    display: flex;
+    justify-content: space-around;
+    /* border:1px solid #FFC700; */
+}
+
+.writeUp {
+    height: 250px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    /* border:2px solid #F20505; */
+
+}
+
+.Heros {
+    /* width: 150%; */
+    font-family: 'Monument Extended';
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0px;
+    text-align: center;
+    /* border: 2px solid palevioletred; */
+    margin-bottom: 5px;
+
+}
+
+.DigitalMarket{
+    font-family: 'Comic Sans MS';
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 20px;
+    /* letter-spacing: ; */
+    text-align: center;
+    color: #111F3D;
+    margin-top: 8px;
+    height: 40px;
+    max-width: 500px;
+    /* border: 2px solid red; */
+
+/* left: 493px; */
+/* top: 104px; */
+/* border-radius: undefinedpx;  */
+
+
+}
+
+.category{ 
+width: 160px;
+height: 45px;
+left: 624px;
+top: 554px;
+color: #F5F5F5;
+background: linear-gradient(117.42deg, #F20505 -49.9%, #FF207E 71.21%);
+border-radius: 117px;
+border: none;
+/* margin-buttom: 5px; */
+margin-bottom: 25px;
+/* border: 1px solid blue; */
+}
+
+.category button{
+    margin-top: 0;
+    border: 1px solid yellow;
+}
+
+
+.Down {
+    width: 87%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 6%;
+    /* border: 2px solid red; */
+}
