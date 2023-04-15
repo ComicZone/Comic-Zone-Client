@@ -9,13 +9,13 @@ import { StoreProvider } from "./Context/store_context";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <UserProvider>
-      <StoreProvider>
+    <StoreProvider>
+      <UserProvider>
         <CartProvider>
           <App />
         </CartProvider>
-      </StoreProvider>
-    </UserProvider>
+      </UserProvider>
+    </StoreProvider>
   </React.StrictMode>
 );
 
