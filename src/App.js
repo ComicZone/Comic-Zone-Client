@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
-import Navbar from "./Components/Navbar";
+import Rnavbar from "./Components/Rnav";
 import Footer from "./Components/Footer";
 import Homepage from "./Pages/Homepage";
 import Preview from "./Pages/Preview";
@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <Router>    
-        <Navbar />
+        <Rnavbar />
         <Layout>
           <AppRoutes />
         </Layout>
