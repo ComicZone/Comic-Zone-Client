@@ -1,16 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Card from "./Card";
+import Books from "./Books";
+import Banner from './Banner'
+import styled from "styled-components";
 
 const Hero = () => {
   return (
-    <section className="hero-ection">
-      <div className="hero-container">
-        <div className="individual-cards">
-          <Link to="/preview">Click to go to preview page</Link>
-        </div>
-      </div>
-    </section>
+    <Section>
+      <Card/>
+      <Books/>
+      <Banner />
+    </Section>
+
   );
 };
 
 export default Hero;
+
+const Section = styled.section`
+`

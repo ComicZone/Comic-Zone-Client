@@ -9,7 +9,7 @@ const Homepage = () => {
   return (
     <main>
       <Hero/>
-      <Banner />
+      {/* <Banner /> */}
       <Comics />
       {/* <CheckoutButton amount={'5.99'}/> */}
     </main>
