@@ -7,6 +7,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-family: Comic Sans MS;
 }
 .summary-cont .summary-prog{
     width: 80%;
@@ -30,6 +31,7 @@
     text-align: center;
     font-weight: 500;
     color: black;
+  transition: 0.5s ease;
 
 }
 .summary-cont .summary-prog .underline{
@@ -50,6 +52,11 @@
 
 .summary-cont .summary__card{
     margin: 1rem 0;
+    transition: 0.5s ease-in-out;
+}
+
+.summary-cont .summary__card:hover{
+    transform: scale(1.01);
 }
 .summary-cont .summary__card .card {
     display: flex;
@@ -69,8 +76,11 @@
         position: relative;
         border-radius: 6px;
         margin: 0.8rem ;
+  transition: 0.5s ease;
     }
-
+    .summary-cont .summary__card .card .card__img:hover {
+        transform: scale(1.02);
+    }
 
     .summary-cont .summary__card .card .card__img img{
         width: 100%;
@@ -80,6 +90,7 @@
         border-radius: 6px;
         height: 100%;
         object-fit: cover;
+  transition: 0.5s ease;
     } 
 
 
@@ -107,7 +118,6 @@
     
     display: flex;
     align-items: baseline;
-
 }
 
 
@@ -150,13 +160,64 @@
 }
 
 
+
+
+.rating__cont .ratings{
+    font-size: 16px;
+    gap:0;
+    margin: 0px 8px;
+}
+
+/* The Order summary container box---- Right Box */
 .summary-cont .order-summary{
     
     width: 80%;
     display: flex;
     height: 400px;
+    text-align: left;
+    margin-top: 3em;
     max-width: 571px;
-     border: 1px solid ;
+}
+
+.summary-cont .order-summary .summary__order__cont{
+    width: 100%;
+    background-color: #F9F5F5;
+    padding: 1.6em;
+}
+
+.summary-cont .order-summary .summary__order__cont h3{
+    padding-left: 0.8em;
+    margin-bottom: 8px;
 }
 
 
+.summary-cont .order-summary .summary__order__cont hr{
+    width: 98%;
+    margin: auto;
+}
+
+.summary-cont .order-summary .summary__order__cont {
+
+}
+
+
+
+.summary__btn{
+    margin: auto;
+    color: red;
+}
+
+
+@media screen and (max-width :768px) {
+
+  
+    .summary-cont .summary-prog{
+        width: 100%;
+        max-width: 100%;
+    }    
+    
+    .summary-cont .order-summary {
+        max-width: 100%;
+        width: 100%;
+    }
+}

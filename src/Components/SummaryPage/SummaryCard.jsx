@@ -2,6 +2,7 @@ import React from 'react'
 import { SummaryData } from './SummaryData'
 import { FastForwardCircle } from 'phosphor-react'
 import '../../Stylesheets/summary.css'
+import Ratings from '../Ratings'
 
 const SummaryCard = () => {
   return (
@@ -24,7 +25,7 @@ const SummaryCard = () => {
                             <p>
                                 Preview
                             </p>
-                            <FastForwardCircle / >
+                            <Ratings size={16} rating={3.9} className={'ratings'}/>
                                 <div className="rating__count">
                                     ({items.preview_count})
                                 </div>
