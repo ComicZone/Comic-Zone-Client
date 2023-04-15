@@ -26,7 +26,9 @@ const Comics = () => {
                 <p className="banner-price">Price</p>
                 <p className="banner-currency">$50</p>
               </div>
-              <button className="banner-btn">Buy now</button>
+              <Link to="/preview" className="banner-btn">
+                Buy now
+              </Link>
             </div>
           </div>
         </div>

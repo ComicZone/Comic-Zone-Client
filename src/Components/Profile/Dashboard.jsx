@@ -1,35 +1,95 @@
 import React from "react";
 import styled from "styled-components";
+import "../../Stylesheets/SidebarProfile.css";
+import { AiOutlineStar } from "react-icons/ai";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-function Dashboard() {
+const Dashboard = () => {
+  const settings = {
+    dots: false,
+    autoplay: true,
+    autoplayspeed: 4000,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <Container>
       <UserBooks>
-        <Heading>
-            My Books
-        </Heading>
+        <Heading>My Books</Heading>
         <BooksContainer>
-
-        
-        <Book>
-          <BookCard></BookCard>
-          <BookDetails></BookDetails>
-        </Book>
-        <Book>
-          <BookCard></BookCard>
-          <BookDetails></BookDetails>
-        </Book>
+          <Slider {...settings}>
+            <Book>
+              <BookCard></BookCard>
+              <BookDetails>
+                <div className="book-route-container">
+                  <h1 className="peaceful-rath">Peaceful Rath</h1>
+                  <h1 className="thrill">Thrill/ Drama/ Sci-Fi</h1>
+                  <div className="book-cardsection">
+                    <span className="star">
+                      <AiOutlineStar /> 4.7
+                    </span>
+                    <h2 className="review">120 reviews</h2>
+                  </div>
+                </div>
+              </BookDetails>
+            </Book>
+            <Book>
+              <BookCard></BookCard>
+              <BookDetails>
+                <div className="book-route-container">
+                  <h1 className="peaceful-rath">Peaceful Rath</h1>
+                  <h1 className="thrill">Thrill/ Drama/ Sci-Fi</h1>
+                  <div className="book-cardsection">
+                    <span className="star">
+                      <AiOutlineStar /> 4.7
+                    </span>
+                    <h2 className="review">120 reviews</h2>
+                  </div>
+                </div>
+              </BookDetails>
+            </Book>
+          </Slider>
         </BooksContainer>
       </UserBooks>
       <NewRelease></NewRelease>
     </Container>
   );
-}
+};
 
 export default Dashboard;
 
 const Container = styled.section`
-  background: yellow;
+  // background: yellow;
+  border: 1px solid red;
   height: 100%;
   display: flex;
   width: 100%;
@@ -38,10 +98,10 @@ const Container = styled.section`
 `;
 
 const UserBooks = styled.div`
-display: flex;
-flex-direction: column;
-align-items: start;
-gap: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3em;
 `;
 
 const Heading = styled.h2`
@@ -51,14 +111,14 @@ const Heading = styled.h2`
   line-height: 92.5%;
   color: #203049;
 `;
-const BooksContainer =styled.div`
+const BooksContainer = styled.div`
   display: flex;
-`
+`;
 const Book = styled.div`
   height: 283px;
   display: flex;
   width: 470px;
-  max-width:470px;
+  max-width: 470px;
   outline: 1px solid black;
   position: relative;
 `;
@@ -70,10 +130,11 @@ const BookCard = styled.div`
   width: 226px;
   height: 242px;
   background: linear-gradient(
-    127.65deg,
-    rgba(5, 84, 242, 0.06) 0%,
-    rgba(32, 156, 255, 0.29) 100%
-  );
+      127.65deg,
+      rgba(5, 84, 242, 0.06) 0%,
+      rgba(32, 156, 255, 0.29) 100%
+    ),
+    url("../../Assets/images/src2.jpg");
   border-radius: 15px;
 `;
 const BookDetails = styled.div`

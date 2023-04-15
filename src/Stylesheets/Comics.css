@@ -90,12 +90,14 @@
   font-family: "Comic Sans MS", arial;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  text-decoration: none;
   border-radius: 2rem;
   border: 1px solid #fb1a1a;
   transition: all 0.4s ease-in-out;
 }
 .banner-btn:hover {
   background-color: #fff;
+  text-decoration: none;
   color: #fb1a1a;
   border: 1px solid #fff;
 }
