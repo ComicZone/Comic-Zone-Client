@@ -5,13 +5,15 @@ import Footer from "./Components/Footer";
 import Homepage from "./Pages/Homepage";
 import Preview from "./Pages/Preview";
 import Error from "./Components/Error";
-
+// import Profile from "./Pages/Profile";
+import Layout from "./Components/Layout";
 
 function AppRoutes() {
   const routes = useRoutes([
     { path: "/", element: <Homepage /> },
     { path: "/home", element: <Homepage /> },
     { path: "/preview", element: <Preview /> },
+    // { path: "/profile", element: <Profile /> },
     { path: "*", element: <Error /> },
 
     // {
@@ -27,18 +29,18 @@ function AppRoutes() {
     //     { path: "/user/signup", element: <Signup /> },
     //   ],
     // },
-   
   ]);
   return routes;
 }
 
-
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router>    
         <Navbar />
+        <Layout>
           <AppRoutes />
+        </Layout>
         <Footer />
       </Router>
     </div>
