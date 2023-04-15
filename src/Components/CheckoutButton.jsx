@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { usePaystackPayment } from "react-paystack";
 import { converDollarToNaira } from "../Utils/converDollarToNaira";
+import { useNavigate } from "react-router-dom";
 
 const Currency = {
   naira: "NGN",
@@ -9,10 +10,7 @@ const Currency = {
 };
 
 // you can call this function anything
-const onSuccess = (reference) => {
-  // Implementation for whatever you want to do with reference and after success call.
-  console.log(reference);
-};
+
 
 // you can call this function anything
 const onClose = () => {
@@ -21,6 +19,12 @@ const onClose = () => {
 };
 
 const CheckoutButton = ({ amount , classname}) => {
+  const navigate = useNavigate()
+  const onSuccess = (reference) => {
+    navigate('/profile')
+  // Implementation for whatever you want to do with reference and after success call.
+  console.log(reference);
+};
   const config = {
     reference: new Date().getTime().toString(),
     email: "example@example.com",

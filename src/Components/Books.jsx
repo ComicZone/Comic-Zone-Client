@@ -10,9 +10,9 @@ export default function Books() {
 	}
 	return (
 		<>
-			<div className="Down">
+			<div className="Down" onClick={handleNavigate}>
 
-      <div className="BookCard3">
+      <div className="BookCard3" onClick={handleNavigate}>
 					<div className="middle">
 						<div className="information">
 							<div className="FirstContent">
@@ -39,7 +39,7 @@ export default function Books() {
 
 
 
-        <div className="BookCard">
+        <div className="BookCard" onClick={handleNavigate}>
 					<div className="middle">
 						<div className="information">
 							<div className="FirstContent">
@@ -66,7 +66,7 @@ export default function Books() {
 
 
         
-        <div className="BookCard">
+        <div className="BookCard" onClick={handleNavigate}>
 					<div className="middle">
 						<div className="information">
 							<div className="FirstContent">
@@ -93,7 +93,7 @@ export default function Books() {
 
 
 
-        <div className="BookCard">
+        <div className="BookCard" onClick={handleNavigate}>
 					<div className="middle">
 						<div className="information">
 							<div className="FirstContent">

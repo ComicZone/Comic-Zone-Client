@@ -57,7 +57,7 @@ const Summary = () => {
                     <p>{``}</p>
                  </div>
 
-           <CheckoutButton className='summary__btn' />
+           <CheckoutButton className='summary__btn' amount={100}/>
 
             </div>
            
