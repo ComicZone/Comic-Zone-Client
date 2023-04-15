@@ -5,6 +5,7 @@ import Review from "../Components/Reviews/Review";
 import Works from "../Components/Works/Works";
 import Ratings from "../Components/Ratings";
 import {Link} from "react-router-dom"
+import styled from "styled-components";
 
 function Preview() {
   return (
@@ -35,7 +36,7 @@ function Preview() {
               </p>
               <Button name="Add to cart" />
               {/* <Button name="BUY for $100" /> */}
-              <Link to={"/summary"}>Buy for $100</Link>
+              <Buy to={"/summary"}>Buy for $100</Buy>
             </div>
           </div>
         </div>
@@ -104,3 +105,10 @@ function Preview() {
 }
 
 export default Preview;
+
+const Buttons = styled(Button)`
+`
+
+const Buy = styled(Link)`
+background: 'crimson'
+`
