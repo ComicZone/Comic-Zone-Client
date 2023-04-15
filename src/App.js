@@ -40,9 +40,7 @@ function App() {
     <div className="App">
     
       <Router>
-        <Navbar />
-        <AppRoutes />
-         
+        <Navbar />         
         <Layout>
           <AppRoutes />
         </Layout>
