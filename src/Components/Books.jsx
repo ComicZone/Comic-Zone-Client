@@ -1,8 +1,13 @@
 import React from "react";
 import "./Card.css";
 import { HiFire } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 export default function Books() {
+		const navigate = useNavigate()
+	const handleNavigate = () => {
+		return navigate('/preview')
+	}
 	return (
 		<>
 			<div className="Down">
@@ -26,7 +31,7 @@ export default function Books() {
 							</div>
 
 							<div className="ThirdContent">
-								<button> BUY </button>
+								<button onClick={handleNavigate}> BUY </button>
 							</div>
 						</div>
 					</div>
@@ -53,7 +58,7 @@ export default function Books() {
 							</div>
 
 							<div className="ThirdContent">
-								<button> BUY </button>
+								<button onClick={handleNavigate}> BUY </button>
 							</div>
 						</div>
 					</div>
@@ -80,7 +85,7 @@ export default function Books() {
 							</div>
 
 							<div className="ThirdContent">
-								<button> BUY </button>
+								<button onClick={handleNavigate}> BUY </button>
 							</div>
 						</div>
 					</div>
@@ -107,7 +112,7 @@ export default function Books() {
 							</div>
 
 							<div className="ThirdContent">
-								<button> BUY </button>
+								<button onClick={handleNavigate}> BUY </button>
 							</div>
 						</div>
 					</div>
