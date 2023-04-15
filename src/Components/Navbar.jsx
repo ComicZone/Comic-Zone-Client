@@ -7,6 +7,12 @@ import Badge from "./Images/Badge.png"
 
 
 
+<<<<<<< HEAD
+        /></button> </form> <div className="links" > <Link to="/SignUp" > <User size= {
+            32
+        }
+=======
+>>>>>>> ee3358be43bc9ad316f60aecf8eff3c3e16f2dfb
 
 const Navbar = () => {
   
