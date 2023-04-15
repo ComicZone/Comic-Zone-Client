@@ -1,24 +1,24 @@
-.Preview{
-    position: absolute;
-    width: 1440px;
+.Preview {
+  position: absolute;
+  max-width: 1440px;
 }
-.Home{
-    font-family: 'Comic Sans MS';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    /* identical to box height */
-    text-align: center;
-    color: #6B6C6F;
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-} 
-.Home h2{
-    width: 53px;
-    height: 28px;
+.Home {
+  font-family: "Comic Sans MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height */
+  text-align: center;
+  color: #6b6c6f;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.Home h2 {
+  width: 53px;
+  height: 28px;
 }
 /* .Home h2 span{
     width: 72px;
@@ -26,39 +26,34 @@
 } */
 
 .left {
-    /* background: linear-gradient(127.65deg,rgba(3, 54, 156, 0.2) 0%,rgba(3, 65, 115, 0.34) 100%); */
-    /* position: absolute; */
-    /* width: 591px;
+  /* background: linear-gradient(127.65deg,rgba(3, 54, 156, 0.2) 0%,rgba(3, 65, 115, 0.34) 100%); */
+  /* position: absolute; */
+  /* width: 591px;
     height: 677px; */
-    left: 20px;
-    /* top: 242px;  */
-    border-radius: 15px;
-    display: inline-block;
-    flex-basis: 50%;
-    margin-bottom: 20px;
+  left: 20px;
+  /* top: 242px;  */
+  border-radius: 15px;
+  display: inline-block;
+  flex-basis: 50%;
+  margin-bottom: 20px;
 }
-  .left_img{
-    width: 300px;
-    height: 300px;
-    left: 20px;
-    /* top: 242px;  */
-    border-radius: 15px;
-    /* z-index:-1; */
-    position: relative;
+.left_img {
+  width: 300px;
+  height: 300px;
+  left: 20px;
+  /* top: 242px;  */
+  border-radius: 15px;
+  /* z-index:-1; */
+  position: relative;
 }
-.Grid{
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    /* padding: 10px 0; */
+.Grid {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* padding: 10px 0; */
 }
-.right{
-    flex-basis: 30%;
-    margin-bottom: 20px;
+.right {
+  flex-basis: 30%;
+  margin-bottom: 20px;
 }
-/* .imgc img{
-    display: block;
-    width: 90%;
-    margin: auto;
-} */
