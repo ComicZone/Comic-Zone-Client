@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Homepage from "./Pages/Homepage";
 import Preview from "./Pages/Preview";
+import Card from "./Components/Card";
+import Books from "./Components/Books";
 import Error from "./Components/Error";
 // import Profile from "./Pages/Profile";
 import Layout from "./Components/Layout";
@@ -36,7 +38,7 @@ function AppRoutes() {
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router>    
         <Navbar />
         <Layout>
           <AppRoutes />
