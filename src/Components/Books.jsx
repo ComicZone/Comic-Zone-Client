@@ -4,7 +4,7 @@ import { HiFire } from "react-icons/hi";
 
 export default function Books() {
 	return (
-		<div>
+		<>
 			<div className="Down">
 
       <div className="BookCard3">
@@ -116,6 +116,6 @@ export default function Books() {
 
 
       </div>
-		</div>
+		</>
 	);
 }

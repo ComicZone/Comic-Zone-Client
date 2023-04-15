@@ -4,7 +4,7 @@
     left: 50px;
     top: 295px;
     border-radius: 15px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     background-image: url(/public/HeroImages/two.png);
     background-size: contain;
     /* border: 1px solid red; */
@@ -31,7 +31,7 @@
     /* left: 50px;
     top: 295px; */
     border-radius: 15px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     background-image: url(/public/HeroImages/two.png);
     background-size: contain;
     /* object-fit: contain; */
@@ -196,7 +196,7 @@ margin-bottom: 25px;
 
 .Down {
     width: 87%;
-    height: 170px;
+    /* height: 170px; */
     display: flex;
     align-items: center;
     justify-content: space-between;

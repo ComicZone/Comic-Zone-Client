@@ -1,9 +1,11 @@
-.banner {
-  min-height: 100px;
+.banner-container {
+  font-family: "Comic Sans MS", arial;
+  padding: 2rem 0;
   width: 100%;
   background-color: #000000;
   color: #ffffff;
-  margin :40px 0;
+  margin: 40px 0;
+  overflow: hidden;
 }
 
 .individual-slides {
@@ -14,4 +16,14 @@
   font-size: 32px;
   font-weight: 800;
   color: #ffffff;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .individual-slides .slide-text {
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
