@@ -5,12 +5,15 @@ import Footer from "./Components/Footer";
 import Homepage from "./Pages/Homepage";
 import Preview from "./Pages/Preview";
 import Error from "./Components/Error";
+// import Profile from "./Pages/Profile";
+import Layout from "./Components/Layout";
 
 function AppRoutes() {
   const routes = useRoutes([
     { path: "/", element: <Homepage /> },
     { path: "/home", element: <Homepage /> },
     { path: "/preview", element: <Preview /> },
+    // { path: "/profile", element: <Profile /> },
     { path: "*", element: <Error /> },
 
     // {
@@ -35,7 +38,9 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <AppRoutes />
+        <Layout>
+          <AppRoutes />
+        </Layout>
         <Footer />
       </Router>
     </div>
