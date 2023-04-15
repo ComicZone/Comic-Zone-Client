@@ -115,6 +115,7 @@ div .ratings.icons {
 }
 Button{
     border: none;
+    margin: 1em;
     margin-left: 8px;
     border-radius: 12px;
     background-color: blue;
@@ -123,4 +124,5 @@ Button{
     width: 140px;
     font-family: Comic Sans MS;
     font-size: 12px bold;
+  
 }
