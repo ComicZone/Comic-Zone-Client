@@ -2,7 +2,7 @@ import img1 from "../Img/Img1.png";
 import style from "./Preview.module.css";
 import Button from "../Components/Button";
 import Review from "../Components/Reviews/Review";
-// import Works from "../Components/Works/Works";
+import Works from "../Components/Works/Works";
 function Preview() {
   return (
     <div className={style.Preview}>
@@ -38,7 +38,7 @@ function Preview() {
           </div>
         </div>
       </div>
-      <div className="Section2">
+      <div className={style.section2}>
       <div className={style.Review}>
         <h2>Customers Reviews</h2>
         <Review name="James Okoye" date="November 12 2022" content=" change is years is here!Deadly republic is back! but what happens change is years is 
@@ -57,9 +57,12 @@ function Preview() {
             here!Deadly republic is back! but what happens when the scary beast planned to execute 
             the president in cold day. One of the biggest" color="brown"/>
       </div>
-      <div className="RealtedWorks">
+      <div className="Realted Works">
         <h2>Related Works</h2>
-        {/* <Works/> */}
+        <Works name="Peaceful Rath" genre="Thrill/ Drama/ Sci-Fi" price="$100" />
+        <Works name="Peaceful Rath" genre="Thrill/ Drama/ Sci-Fi" price="$100" />
+        <Works name="Peaceful Rath" genre="Thrill/ Drama/ Sci-Fi" price="$100" />
+        <Works name="Peaceful Rath" genre="Thrill/ Drama/ Sci-Fi" price="$100" />
       </div>
       </div>
       

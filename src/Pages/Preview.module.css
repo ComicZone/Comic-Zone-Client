@@ -1,5 +1,5 @@
 .Preview{
-    position: absolute;
+    position: relative;
     max-width: 1440px;
 }
 .Home{
@@ -15,6 +15,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    border: 1px solid red;
 } 
 .Home h2{
     width: 53px;
@@ -56,5 +57,11 @@
 .right{
     flex-basis: 30%;
     margin-bottom: 20px;
+}
+.section2{
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    border: 1px solid green
 }
 

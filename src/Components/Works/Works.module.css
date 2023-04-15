@@ -1,0 +1,16 @@
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.RelatedWorks{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.primary-btn{
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid red;
+}
