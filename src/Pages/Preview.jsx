@@ -18,7 +18,7 @@ function Preview() {
           <div className={style.right}>
             <h1>Peaceful Rath</h1>
             <div className="Bookview">
-              <Ratings />
+              <Ratings rating={4.9}/>
               <p className="desc">
                 Deadly republic is back! but what happens when the scary beast
                 planned to execute the president in cold day. One of the biggest
