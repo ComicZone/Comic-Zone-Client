@@ -13,14 +13,14 @@ export default function Footer () {
         
 
       </div>
-      <div class="text1">
+      <div className="text1">
       <a href="#">Privacy</a>         
      < a href="#">Terms of Use</a>
      < a href="#">Help/FAQs</a>        
 
       </div>
          <div  className="icons"><h3>follow ComicZone</h3>
-            <div class="follow">
+            <div className="follow">
                < a href="#">
                 <InstagramLogo size={32}/></a>
                 < a href="#">

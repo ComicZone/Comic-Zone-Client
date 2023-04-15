@@ -37,11 +37,13 @@ export const StoreProvider = ({ children }) => {
   const fetchBooks = async () => {
     dispatch({ type: GET_STORE_BEGIN });
     try {
-      const response = await url.get("/books");
+      const response = await baseUrl.get(`${url}comics`);
       console.log(response);
       const store = response.data.data;
+      console.log('store::: ',store)
       dispatch({ type: GET_STORE_SUCCESS, payload: store });
     } catch (error) {
+      console.log("error::: ", error);
       dispatch({ type: GET_STORE_ERROR });
     }
   };
