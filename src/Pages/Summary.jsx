@@ -32,11 +32,11 @@ const Summary = () => {
             <div className="summary__order__cont">
                 <h3 className='summary__head'>Order Summary</h3>
                 <hr />
-                <h3>Apply Coupoun </h3>
+                <h3 className='apply'>Apply Coupoun </h3>
                 <form action="#" onSubmit={(e)=>{e.preventDefault()}}>
                     <input type="text"  placeholder='Enter coupoun code'/>
                     <button>
-                        <FaArrowRight  />
+                        <FaArrowRight className='icon' />
                     </button>
                 </form>
                  <hr />
@@ -47,14 +47,14 @@ const Summary = () => {
                  </div>
                  <div className="vat__cont">
                     <h3>VAT  </h3>
-                    <p>Price {`$ ${0}`} <span>(free)</span></p>
+                    <p>Price {`$ ${0} (`} <span>free</span>{`)`}</p>
                  </div>
 
                  <hr />
 
                  <div className="total__checkout">
                     <h5>Total</h5>
-                    <p>{``}</p>
+                    <p>{`$ ${50}`}</p>
                  </div>
 
            <CheckoutButton className='summary__btn' />

@@ -50,4 +50,9 @@
     margin-left: 100px;
    }
   
-  
+  @media  (max-width :768px) {
+    .footer .text img {
+      width: 200px;
+      height: 70px;
+    }
+  }
