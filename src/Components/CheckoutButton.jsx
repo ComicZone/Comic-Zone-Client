@@ -51,13 +51,14 @@ export default CheckoutButton;
 const Wrapper = styled.section`
   background: rgba(0, 19, 47, 0.44);
   backdrop-filter: blur(10.687px);
-  width: MIN(440.51px, 50%);
+  width: MIN(440.51px, 80%);
   border-radius: 38.1677px;
-  padding: 8px 16px;
+  padding: 6px 18px;
   max-height:85px;
+  margin:auto ;
   margin-top: 1em;
   @media screen and (max-width :768px) {
-    width: MIN(300px, 40%);
+    width: MIN(300px, 100%);
   }
 `;
 

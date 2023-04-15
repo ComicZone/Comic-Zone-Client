@@ -173,7 +173,7 @@
     
     width: 80%;
     display: flex;
-    height: 400px;
+    height: 500px;
     text-align: left;
     margin-top: 3em;
     max-width: 571px;
@@ -188,6 +188,11 @@
 .summary-cont .order-summary .summary__order__cont h3{
     padding-left: 0.8em;
     margin-bottom: 8px;
+    font-family: 'Comic Sans MS';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
 }
 
 
@@ -195,16 +200,70 @@
     width: 98%;
     margin: auto;
 }
+.summary-cont .order-summary .summary__order__cont .apply{
+   margin-top: 12px;
+}
 
-.summary-cont .order-summary .summary__order__cont {
+.summary-cont .order-summary .summary__order__cont  form{
+    width: 100%;
+    align-items: center;
 
 }
 
+.summary-cont .order-summary .summary__order__cont input {
+    width: 80%;
+    height: 60px;
+    margin: 10px 0px;
+    outline: none;
+    border: none;
 
+}
+
+.summary-cont .order-summary .summary__order__cont input::placeholder {
+    font-size: 14px ;
+}
+
+.summary-cont .order-summary .summary__order__cont form  button{
+    width: 40px;
+    height: 60px;
+    color: #000;
+    margin: 0;position: relative;
+background:transparent;
+}
+
+.summary-cont .order-summary .summary__order__cont form  button .icon {
+    margin: 0;
+    font-size: 20px;
+}
+
+.summary-cont .order-summary .summary__order__cont .cart__summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 0 .8em 0;
+}
+
+.summary-cont .order-summary .summary__order__cont .vat__cont {
+
+display: flex;
+justify-content: space-between;
+}
+
+.summary-cont .order-summary .summary__order__cont .vat__cont p span{
+    color: rgb(162, 159, 159);
+}
+
+.total__checkout{
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+}
 
 .summary__btn{
     margin: auto;
+    padding-top: 20px;
     color: red;
+    width: 200px;
 }
 
 
