@@ -4,11 +4,11 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Homepage from "./Pages/Homepage";
 import Preview from "./Pages/Preview";
-import Card from "./Components/Card";
-import Books from "./Components/Books";
 import Error from "./Components/Error";
 import Userdashboard from "./Pages/Userdashboard";
 import Profile from "./Pages/Profile"; 
+import Summary from "./Pages/Summary";
+// import Profile from "./Pages/Profile";
 import Layout from "./Components/Layout";
 
 function AppRoutes() {
@@ -18,6 +18,8 @@ function AppRoutes() {
     { path: "/preview", element: <Preview /> },
     { path: "/userdashboard", element: <Userdashboard /> },
     { path: "/profile", element: <Profile /> },
+    { path: "/summary", element: <Summary /> },
+    // { path: "/profile", element: <Profile /> },
     { path: "*", element: <Error /> },
 
     // {
@@ -39,7 +41,7 @@ function AppRoutes() {
 
 function App() {
   return (
-    <div className="App">
+    <div className="App">        
       <Router>    
         <Navbar />
         <Layout>

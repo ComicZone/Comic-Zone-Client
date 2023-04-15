@@ -3,10 +3,11 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { MagnifyingGlass, ShoppingCart } from "phosphor-react";
 import Logo from "../Assests/images/comiczonelogo.svg";
-import Badge from "../Assests/images/badge.png";
+import Badge from "./Images/Badge.png"
 
 const Navbar = () => {
-  return (
+  
+ return(
     <div className="navbar">
       <Link to="/">
         <img src={Logo} alt="Logo" className="logo" />
@@ -24,7 +25,9 @@ const Navbar = () => {
           <ShoppingCart size={32} />
         </Link>
       </div>
-    </div>
+        
+        </div>
+
   );
 };
 
