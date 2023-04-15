@@ -1,6 +1,31 @@
+.Preview{
+    position: relative;
+    max-width: 1440px;
+}
+.Home{
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height */
+    text-align: center;
+    color: #6B6C6F;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* border: 1px solid red; */
+} 
+.Home h2{
+    width: 53px;
+    height: 28px;
+}
 .Preview {
-  position: absolute;
+  position: relative;
   max-width: 1440px;
+  font-family: "Comic Sans MS";
+  padding: 3em 1em;
 }
 .Home {
   font-family: "Comic Sans MS";
@@ -56,4 +81,48 @@
 .right {
   flex-basis: 30%;
   margin-bottom: 20px;
+  text-align: left;
+  max-width: 418px;
+}
+.section2{
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    /* border: 1px solid green; */
+    margin-top: 10px;
+}
+
+.right > .Bookview > p.desc{
+    font-family: 'Comic Sans MS';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;  
+        color: #4E5765;
+}
+
+
+
+div .ratings.icons {
+  display: flex;
+}
+
+.ratings.icons .icon{
+    color: crimson;
+    padding: 1em;
+}
+Button{
+    border: none;
+    margin: 1em;
+    margin-left: 8px;
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 140px;
+    font-family: Comic Sans MS;
+    font-size: 12px bold;
+  
 }

@@ -7,9 +7,10 @@
     flex-direction: row;
     justify-items: space-between;
     align-items:flex-start ;
-    padding: 10px  10px 0;
-    /* position: absolute; */
+    padding: 10px ;
     bottom:0;
+
+    
    }
    .footer h2{
     font-size: 15px; 

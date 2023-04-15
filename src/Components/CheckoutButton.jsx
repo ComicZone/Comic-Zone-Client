@@ -20,7 +20,7 @@ const onClose = () => {
   console.log("closed");
 };
 
-const CheckoutButton = ({ amount }) => {
+const CheckoutButton = ({ amount , classname}) => {
   const config = {
     reference: new Date().getTime().toString(),
     email: "example@example.com",
@@ -31,7 +31,7 @@ const CheckoutButton = ({ amount }) => {
   const initializePayment = usePaystackPayment(config);
   return (
     <Wrapper>
-      <Button
+      <Button className= {classname}
         onClick={() => {
           initializePayment(onSuccess, onClose);
         }}
@@ -50,6 +50,11 @@ const Wrapper = styled.section`
   width: MIN(440.51px, 50%);
   border-radius: 38.1677px;
   padding: 8px 16px;
+  max-height:85px;
+  margin-top: 1em;
+  @media screen and (max-width :768px) {
+    width: MIN(300px, 40%);
+  }
 `;
 
 const Button = styled.button`

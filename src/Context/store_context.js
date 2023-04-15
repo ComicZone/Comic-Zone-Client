@@ -36,7 +36,7 @@ export const StoreProvider = ({ children }) => {
   const fetchBooks = async () => {
     dispatch({ type: GET_STORE_BEGIN });
     try {
-      const response = await baseUrl.get("/books");
+      const response = await baseUrl.get("/comics");
       console.log(response);
       const store = response.data.data;
       dispatch({ type: GET_STORE_SUCCESS, payload: store });
