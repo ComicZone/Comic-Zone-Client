@@ -6,7 +6,7 @@ import Homepage from "./Pages/Homepage";
 import Preview from "./Pages/Preview";
 import Error from "./Components/Error";
 import Userdashboard from "./Pages/Userdashboard";
-// import Profile from "./Pages/Profile";
+import Profile from "./Pages/Profile"; 
 import Layout from "./Components/Layout";
 
 function AppRoutes() {
