@@ -15,7 +15,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 } 
 .Home h2{
     width: 53px;
@@ -83,13 +83,13 @@
   margin-bottom: 20px;
   text-align: left;
   max-width: 418px;
-  height: 80px;
 }
 .section2{
     display: flex;
     column-gap: 20px;
     flex-wrap: wrap;
-    border: 1px solid green
+    /* border: 1px solid green; */
+    margin-top: 10px;
 }
 
 .right > .Bookview > p.desc{
@@ -112,4 +112,15 @@ div .ratings.icons {
 .ratings.icons .icon{
     color: crimson;
     padding: 1em;
+}
+Button{
+    border: none;
+    margin-left: 8px;
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 140px;
+    font-family: Comic Sans MS;
+    font-size: 12px bold;
 }
