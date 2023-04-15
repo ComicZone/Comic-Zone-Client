@@ -26,7 +26,7 @@ const Navbar=()=> {
             32
         }
 
-        /></button> </form> <div className="links" > <Link to="/" > <User size= {
+        /></button> </form> <div className="links" > <Link to="/SignUp" > <User size= {
             32
         }
 
