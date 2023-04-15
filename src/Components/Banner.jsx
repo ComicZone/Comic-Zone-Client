@@ -44,25 +44,28 @@ const Banner = () => {
     <section className="banner-container">
       <Slider {...settings}>
         <div className="individual-slides">
-          <h2 className="slide-text">comics</h2>
+          <h2 className="slide-text">Romance</h2>
         </div>
         <div className="individual-slides">
-          <h2 className="slide-text">Kids Comics</h2>
+          <h2 className="slide-text">Adult</h2>
         </div>
         <div className="individual-slides">
-          <h2 className="slide-text">Latest Comics</h2>
+          <h2 className="slide-text">Fiction</h2>
         </div>
         <div className="individual-slides">
-          <h2 className="slide-text">Adventures</h2>
+          <h2 className="slide-text">Sci-Fi</h2>
         </div>
         <div className="individual-slides">
           <h2 className="slide-text">Action</h2>
         </div>
         <div className="individual-slides">
+          <h2 className="slide-text">Lifestyle</h2>
+        </div>
+        <div className="individual-slides">
           <h2 className="slide-text">Imagination</h2>
         </div>
         <div className="individual-slides">
-          <h2 className="slide-text">Romance</h2>
+          <h2 className="slide-text">Planet</h2>
         </div>
       </Slider>
     </section>

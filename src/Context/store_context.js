@@ -13,8 +13,9 @@ import {
   ACCESS_BOOK_ERROR,
 } from "../actions";
 import { baseUrl } from "../Utils/baseUrl";
+import { url } from "../Utils/constant";
 
-const StoreContext = React.createContext();
+export const StoreContext = React.createContext();
 
 const initialState = {
   store_error: false,
@@ -36,11 +37,13 @@ export const StoreProvider = ({ children }) => {
   const fetchBooks = async () => {
     dispatch({ type: GET_STORE_BEGIN });
     try {
-      const response = await baseUrl.get("/comics");
+      const response = await baseUrl.get(`${url}comics`);
       console.log(response);
-      const store = response.data.data;
+      const store = response.data.returnedPosts;
+      console.log('store::: ',store)
       dispatch({ type: GET_STORE_SUCCESS, payload: store });
     } catch (error) {
+      console.log("error::: ", error);
       dispatch({ type: GET_STORE_ERROR });
     }
   };
@@ -74,6 +77,7 @@ export const StoreProvider = ({ children }) => {
 
   useEffect(() => {
     fetchBooks();
+    console.log('state object:: ', state)
   }, []);
 
   return (

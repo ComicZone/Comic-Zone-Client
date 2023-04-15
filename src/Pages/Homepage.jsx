@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Banner from "../Components/Banner";
 import Comics from "../Components/Comics";
 import Hero from "../Components/Hero";
 // import CheckoutButton from "../Components/CheckoutButton";
 
 const Homepage = () => {
+
   return (
     <main>
       <Hero/>
