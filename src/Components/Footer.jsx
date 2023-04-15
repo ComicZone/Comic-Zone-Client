@@ -1,4 +1,5 @@
-import Logo from "../Assests/images/comiczonelogo.svg"
+import React from "react";
+import Logo from "./Images/Logo.png"
 import "./Footer.css";
 import {InstagramLogo, FacebookLogo, TwitterLogo, LinkedinLogo,YoutubeLogo}from "phosphor-react";
 
@@ -42,6 +43,9 @@ export default function Footer () {
             <p>CopyRight&copy; {new Date().getFullYear()} </p>
             </div>
             </div>
+
+
+      
     </footer>
     
     );
