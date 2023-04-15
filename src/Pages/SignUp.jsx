@@ -1,8 +1,24 @@
 import "../Stylesheets/Main.css";
 import logo from "../Img/comiczonelogo.svg";
+import { useUserContext } from "../Context/user_context";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const SignUp = () => {
+    const {register} = useUserContext()
+    const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+  const {navigate} = useNavigate()
+
+  const handleSigup = async () => {
+    const form = {email: username, password}
+    await register(form).then(res =>  {
+      if(res!== null){
+      navigate('/profile')
+    }
+    })
+  }
   return (
     <div>
       <div className="h-32 bg-white flex flex-row items-center justify-center"><img className="h-16" src={logo} alt="This is Comic Zone Logo" /></div>
