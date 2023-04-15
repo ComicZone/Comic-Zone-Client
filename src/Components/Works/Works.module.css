@@ -1,0 +1,24 @@
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.RelatedWorks{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.left_img2{
+    /* border: 2px solid blueviolet; */
+    width: 120px;
+    height: 130px;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 3px;
+}
+
+.primary-btn{
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid red;
+}
