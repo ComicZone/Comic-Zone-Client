@@ -1,0 +1,42 @@
+.user-profile-image {
+  font-size: 50px;
+  font-weight: 600;
+  background-color: blue;
+  padding: 5rem;
+  border-radius: 10px;
+}
+
+.book-route-container {
+  position: absolute;
+  padding: 1rem;
+  right: 2px;
+  width: 50%;
+  align-items: flex-end;
+}
+
+.peaceful-rath {
+  color: #fff;
+  font-size: 25px;
+}
+
+.thrill {
+  color: #0455f2;
+}
+
+.book-cardsection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-cardsection .star {
+  color: yellow;
+  font-size: 15px;
+  width: 50%;
+  align-items: right;
+}
+
+.book-cardsection {
+  color: gray;
+  font-size: 10px;
+}

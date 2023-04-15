@@ -25,7 +25,7 @@ const Comics = () => {
     <section className="latest-comics">
       <div className="latest-comics-header">
         <h2 className="latest-comic-lead-text">Latest Comics</h2>
-        <Link to="/" className="latest-comic-sub-text">
+        <Link to="/userdashboard" className="latest-comic-sub-text">
           See all
         </Link>
       </div>
@@ -76,7 +76,9 @@ const Comics = () => {
                 <p className="banner-price">Price</p>
                 <p className="banner-currency">$50</p>
               </div>
-              <button className="banner-btn">Buy now</button>
+              <Link to="/preview" className="banner-btn">
+                Buy now
+              </Link>
             </div>
           </div>
         </div>

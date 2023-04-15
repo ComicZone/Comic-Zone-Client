@@ -1,23 +1,40 @@
 import React from "react";
 import styled from "styled-components";
+import { MdCollections, MdHistory, MdLogout } from "react-icons/md";
+import { CiSaveDown2 } from "react-icons/ci";
+import "../../Stylesheets/SidebarProfile.css";
 
 const MENU_LINKS = [
-  { name: "Collection", path: "", icon: "" },
-  { name: "Saved", path: "", icon: "" },
-  { name: "History", path: "", icon: "" },
-  { name: "Logout", path: "", icon: "" },
+  { name: "Collection", path: "", icon: <MdCollections /> },
+  { name: "Saved", path: "", icon: <CiSaveDown2 /> },
+  { name: "History", path: "", icon: <MdHistory /> },
+  { name: "Logout", path: "", icon: <MdLogout /> },
 ];
 
 function Sidebar() {
   return (
     <Container>
-      <UserBoard />
+      <UserBoard>
+        <h1 className="user-profile-image">BM</h1>
+        <h2 className="username">Welcome back!</h2>
+        <h3 className="user-profilename">Baba Mashood </h3>
+        <div className="user-buttons">
+          <div className="cart-items">
+            <p className="cart-header">cart</p>
+            <p className="cart-text">23</p>
+          </div> 
+          <div className="user-downloads">
+            <p className="download-header">Downloaded</p>
+            <p className="download-text">10</p>
+          </div>
+        </div>
+      </UserBoard>
       <Menu>
         {MENU_LINKS.map((item, index) => {
           return (
             <MenuItems key={`${item.name}-${index}`}>
               <LinkWrapper href={item.path}>
-                <Icon></Icon>
+                <Icon>{item.icon}</Icon>
                 <Text>{item.name}</Text>
               </LinkWrapper>
             </MenuItems>
@@ -39,10 +56,14 @@ const Container = styled.aside`
   font-family: "Comic Sans MS";
 `;
 
+const Text = styled.p``;
+
 const UserBoard = styled.div`
-  height: 559px;
   display: flex;
+  flex-direction: column;
+  height: 559px;
   outline: 1px solid black;
+  background: #f2f4f6;
 `;
 
 const Menu = styled.ul`
@@ -65,8 +86,21 @@ const LinkWrapper = styled.a`
   text-decoration: none;
   display: flex;
   padding: 1em;
+  transition: all 0.2 ease-in-out;
 `;
 
-const Icon = styled.img``;
+const Icon = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 1em;
+  color: #666666;
+  cursor: pointer;
+  transition: all 0.2 ease-in-out;
 
-const Text = styled.p``;
+  &:hover {
+    color: yellow;
+  }
+`;
