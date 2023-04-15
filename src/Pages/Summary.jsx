@@ -2,6 +2,7 @@ import React from 'react'
 import SummaryCard from '../Components/SummaryPage/SummaryCard'
 
 import '../Stylesheets/summary.css'
+import CheckoutButton from '../Components/CheckoutButton'
 
 const Summary = () => {
   return (
@@ -24,7 +25,7 @@ const Summary = () => {
             <SummaryCard />
         </div>
         <div className="order-summary">
-
+            <CheckoutButton />
         </div>
     </div>
 
