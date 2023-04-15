@@ -6,6 +6,8 @@ import Homepage from "./Pages/Homepage";
 import Preview from "./Pages/Preview";
 import Error from "./Components/Error";
 import Userdashboard from "./Pages/Userdashboard";
+// import Profile from "./Pages/Profile";
+import Layout from "./Components/Layout";
 
 function AppRoutes() {
   const routes = useRoutes([
@@ -13,6 +15,7 @@ function AppRoutes() {
     { path: "/home", element: <Homepage /> },
     { path: "/preview", element: <Preview /> },
     { path: "/userdashboard", element: <Userdashboard /> },
+    { path: "/profile", element: <Profile /> },
     { path: "*", element: <Error /> },
 
     // {
@@ -37,7 +40,9 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <AppRoutes />
+        <Layout>
+          <AppRoutes />
+        </Layout>
         <Footer />
       </Router>
     </div>

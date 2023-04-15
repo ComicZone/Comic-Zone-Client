@@ -1,6 +1,8 @@
 .Preview {
-  position: absolute;
+  position: relative;
   max-width: 1440px;
+  font-family: "Comic Sans MS";
+  padding: 3em 1em;
 }
 .Home {
   font-family: "Comic Sans MS";
@@ -56,4 +58,28 @@
 .right {
   flex-basis: 30%;
   margin-bottom: 20px;
+  text-align: left;
+  max-width: 418px;
+}
+
+.right > .Bookview > p.desc{
+    font-family: 'Comic Sans MS';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;  
+        color: #4E5765;
+}
+
+
+
+div .ratings.icons {
+  display: flex;
+}
+
+.ratings.icons .icon{
+    color: crimson;
+    padding: 1em;
 }
