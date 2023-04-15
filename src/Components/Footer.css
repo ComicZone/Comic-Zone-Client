@@ -16,12 +16,12 @@
     font-weight: 400; 
     margin-bottom: 30px; 
    }
-   .text{
+     .footer.text{
     padding: 50px;
     width: 35%;
    }
  
- .text1{
+ .footer.text1{
     padding: 80px;
     margin-bottom: 20px;
   }
@@ -32,18 +32,18 @@
       font-size: 14px;
       margin-bottom: 10px;
   }
-  .follow{
+  .footer.follow{
     display: flex;
     flex-direction: row;
     justify-items: space-between;
     align-items: center;
     padding: 20px;
   }
-  .icons{
+  .footer.icons{
     padding: 40px;
   }
 
-  .copyright{
+    .footer.copyright{
     font-size: 14px;
     margin-top: 40px;
     margin-bottom: 10px; 
