@@ -1,0 +1,223 @@
+.summary-cont{
+    padding: 4em 1.5em;
+    width: 100%;
+    min-height: 100vh;
+    display:flex ;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Comic Sans MS;
+}
+.summary-cont .summary-prog{
+    width: 80%;
+    display: block;
+    max-width: 662px;
+    color: #fff;
+    min-height: 600px;
+}
+.summary-cont .summary-prog ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+
+.summary-cont .summary-prog ul li{
+    margin: 15px 30px;
+    font-size: 16px;
+    width: 33%;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+  transition: 0.5s ease;
+
+}
+.summary-cont .summary-prog .underline{
+    width: 90%;
+    padding: 2px;
+    margin: 0px auto;
+    position: relative;
+    background-color: #E8E8E8;
+}
+
+.summary-cont .summary-prog .underline .linee{
+    background-color: #FFC700;
+    width: 150px;
+    margin: 0px 38%;
+    padding: 1px ;
+}
+
+
+.summary-cont .summary__card{
+    margin: 1rem 0;
+    transition: 0.5s ease-in-out;
+}
+
+.summary-cont .summary__card:hover{
+    transform: scale(1.01);
+}
+.summary-cont .summary__card .card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+    background-color: #FAF8F8;
+    min-height: 200px;
+}
+  
+    .summary-cont .summary__card .card .card__img{
+        width: 40%;
+        max-width: 172px;
+        background-color: #000;
+       min-height: 80%;
+        position: relative;
+        border-radius: 6px;
+        margin: 0.8rem ;
+  transition: 0.5s ease;
+    }
+    .summary-cont .summary__card .card .card__img:hover {
+        transform: scale(1.02);
+    }
+
+    .summary-cont .summary__card .card .card__img img{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 6px;
+        height: 100%;
+        object-fit: cover;
+  transition: 0.5s ease;
+    } 
+
+
+    .summary-cont .summary__card .card .card__details{
+        color: #000;
+      flex: 60%;
+      text-align: left;
+        margin: 0.6rem ;
+        
+    }
+    
+    .summary-cont .summary__card .card .card__details .summary__para{
+    margin: 0.8em 0.6em;
+    /* padding: 2em ; */
+}
+
+.summary-cont .summary__card .card .card__details .summary__para p{
+    line-height: 2;
+    font-weight: 400;
+    align-items: baseline;
+    font-size: 16px;
+}
+
+.summary-cont .summary__card .card .card__details .rating__cont{
+    
+    display: flex;
+    align-items: baseline;
+}
+
+
+/* .summary-cont .summary__card .card .card__details .summary__para p:last-child{
+    padding-bottom: 12px;
+} */
+
+
+.summary-cont .summary__card .card .card__details .little__card__img{
+    display: flex;
+    justify-content: space-around;
+    width: 80px;
+    height: 80px;
+    max-width: 90px;
+    position: relative;
+    border-radius: 6px;
+    margin: 0.8rem ;
+
+}
+
+.ratings{
+    align-self: baseline;
+}
+
+
+.summary-cont .summary__card .card .card__details .little__card__img img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.summary-cont .summary__card .card .card__details .little__card__img img.back__cover{
+    left: 90px;
+}
+
+
+
+
+.rating__cont .ratings{
+    font-size: 16px;
+    gap:0;
+    margin: 0px 8px;
+}
+
+/* The Order summary container box---- Right Box */
+.summary-cont .order-summary{
+    
+    width: 80%;
+    display: flex;
+    height: 400px;
+    text-align: left;
+    margin-top: 3em;
+    max-width: 571px;
+}
+
+.summary-cont .order-summary .summary__order__cont{
+    width: 100%;
+    background-color: #F9F5F5;
+    padding: 1.6em;
+}
+
+.summary-cont .order-summary .summary__order__cont h3{
+    padding-left: 0.8em;
+    margin-bottom: 8px;
+}
+
+
+.summary-cont .order-summary .summary__order__cont hr{
+    width: 98%;
+    margin: auto;
+}
+
+.summary-cont .order-summary .summary__order__cont {
+
+}
+
+
+
+.summary__btn{
+    margin: auto;
+    color: red;
+}
+
+
+@media screen and (max-width :768px) {
+
+  
+    .summary-cont .summary-prog{
+        width: 100%;
+        max-width: 100%;
+    }    
+    
+    .summary-cont .order-summary {
+        max-width: 100%;
+        width: 100%;
+    }
+}

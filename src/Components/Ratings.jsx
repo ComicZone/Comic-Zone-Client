@@ -3,18 +3,18 @@ import styled from "styled-components";
 
 const RATINGS = [1, 2, 3, 4, 5];
 
-const Ratings = ({ rating }) => {
+const Ratings = ({ rating, className, size }) => {
   const ratings = Number(rating);
   return (
-    <Container>
+    <Container className={className}>
       {RATINGS.map((v, i) => {
         if (v <= ratings) {
           if (i + 1 === parseInt(ratings)) {
-            return <MdStarHalf size={24} color="#FFC700" />;
+            return <MdStarHalf size={size} color="#FFC700" />;
           }
-          return <MdStar size={24} color="#FFC700" />; //<MdStar size={24} color="#FFC700" />;
+          return <MdStar size={size} color="#FFC700" />; //<MdStar size={24} color="#FFC700" />;
         }
-        return <MdStar size={24} color="#E8E8E8" />;
+        return <MdStar size={size} color="#E8E8E8" />;
       })}
     </Container>
   );
