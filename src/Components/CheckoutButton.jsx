@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { usePaystackPayment } from "react-paystack";
 import { converDollarToNaira } from "../Utils/converDollarToNaira";
+import { useNavigate } from "react-router-dom";
 
 const Currency = {
   naira: "NGN",
@@ -9,10 +10,7 @@ const Currency = {
 };
 
 // you can call this function anything
-const onSuccess = (reference) => {
-  // Implementation for whatever you want to do with reference and after success call.
-  console.log(reference);
-};
+
 
 // you can call this function anything
 const onClose = () => {
@@ -21,6 +19,12 @@ const onClose = () => {
 };
 
 const CheckoutButton = ({ amount , classname}) => {
+  const navigate = useNavigate()
+  const onSuccess = (reference) => {
+    navigate('/profile')
+  // Implementation for whatever you want to do with reference and after success call.
+  console.log(reference);
+};
   const config = {
     reference: new Date().getTime().toString(),
     email: "example@example.com",
@@ -47,13 +51,14 @@ export default CheckoutButton;
 const Wrapper = styled.section`
   background: rgba(0, 19, 47, 0.44);
   backdrop-filter: blur(10.687px);
-  width: MIN(440.51px, 50%);
+  width: MIN(440.51px, 80%);
   border-radius: 38.1677px;
-  padding: 8px 16px;
+  padding: 6px 18px;
   max-height:85px;
+  margin:auto ;
   margin-top: 1em;
   @media screen and (max-width :768px) {
-    width: MIN(300px, 40%);
+    width: MIN(300px, 100%);
   }
 `;
 

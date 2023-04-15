@@ -30,7 +30,7 @@ export default function Card() {
 							</div>
 
 							<div className="ThirdContent">
-								<button> BUY </button>
+								<button onClick={handleNavigate}> BUY </button>
 							</div>
 						</div>
 					</div>
