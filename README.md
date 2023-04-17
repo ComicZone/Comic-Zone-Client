@@ -5,13 +5,15 @@
 
 ## Contribution
 <br />
-We are working with a 3 branch structure: **Main, Develop and Features.**
+Here's our branch structure: **Main, Develop, Features and Fixes.**
 <br />
 -- The main branch is off limits for now. That's our live production branch
 <br />
--- The develop branch is where we merge all our features/work together
+-- The develop branch is where we merge all our features/fixes/work together
 <br />
 -- The features branch is the one you would create for the feature you are working on.
+<br />
+-- The fix branch is the one you would create for the fix you are working on.
 <br />
 
 
@@ -30,14 +32,23 @@ These are the steps to take:
 If you are working on a page/feature for e.g Cart, 
 
 1. Check out to develop branch (git checkout develop)
+   
    ```sh
    git checkout develop && npm i
    ```
 
-2. Create your own branch. (git checkout -b cart). That command also checks out into the cart branch.
-   ```sh
-   git checkout -b cart
-   ```
+2. Create your own branch. 
+<br />
+If you are working on a feature (e.g git checkout -b feature/cart), That command also checks out into the feature/cart branch.
+
+```sh
+   git checkout -b feature/cart
+```
+If you are working on a bug fix (e.g git checkout -b fix/cartCountCorrection), That command also checks out into the fix/cartCountCorrection.
+   
+```sh
+  git checkout -b fix/cartCountCorrection
+```
 
 3. Write your code, commit, and push to remote. I guess we know how to commit and push our codes.
 
@@ -50,17 +61,23 @@ If you are working on a page/feature for e.g Cart,
    ```sh
    git pull origin develop
    ```   
-   Check out to your _cart_ branch, (git checkout cart)
+   Check out to your _feature/cart_ branch if you worked on a feature, (git checkout feature/cart)
    ```sh
-   git checkout cart
-   ```  
+   git checkout feature/cart
+   ``` 
+   or your _fix/cartCountCorrection_ branch if you worked on a fix, (git checkout fix/cartCountCorrection)
+    ```sh
+   git checkout fix/cartCountCorrection
+   ``` 
+  
+   
    then merge in _develop_ (git merge develop)
    ```sh
    git merge develop
    ```  
    Fix possible merge conflicts, then push to remote (git push)
    ```sh
-   git push
+   git push origin [your_local_branch_name]
    ``` 
 
 5. Go on Github. Click _create pull request_. 

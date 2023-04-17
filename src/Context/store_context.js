@@ -40,7 +40,7 @@ export const StoreProvider = ({ children }) => {
       const response = await baseUrl.get(`${url}comics`);
       console.log(response);
       const store = response.data.returnedPosts;
-      console.log('store::: ',store)
+      console.log("store::: ", store);
       dispatch({ type: GET_STORE_SUCCESS, payload: store });
     } catch (error) {
       console.log("error::: ", error);
@@ -60,7 +60,7 @@ export const StoreProvider = ({ children }) => {
   };
 
   const accessBook = async (bookID) => {
-    const url = 'https://'
+    const url = "https://";
     dispatch({ type: ACCESS_BOOK });
     try {
       const response = await axios.get(`${url}${bookID}`);
@@ -76,9 +76,11 @@ export const StoreProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    fetchBooks();
-    console.log('state object:: ', state)
-  }, []);
+    if (state.store.length <= 0) {
+      fetchBooks();
+    }
+
+  }, [state.store]);
 
   return (
     <StoreContext.Provider
