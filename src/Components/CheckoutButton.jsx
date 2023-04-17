@@ -18,7 +18,7 @@ const onClose = () => {
   console.log("closed");
 };
 
-const CheckoutButton = ({ amount , classname}) => {
+const CheckoutButton = ({ amount , classname, isDisabled}) => {
   const navigate = useNavigate()
   const onSuccess = (reference) => {
     navigate('/profile')
@@ -35,7 +35,7 @@ const CheckoutButton = ({ amount , classname}) => {
   const initializePayment = usePaystackPayment(config);
   return (
     <Wrapper>
-      <Button className= {classname}
+      <Button disabled={isDisabled} className= {classname}
         onClick={() => {
           initializePayment(onSuccess, onClose);
         }}
