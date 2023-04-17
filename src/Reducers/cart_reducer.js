@@ -8,17 +8,9 @@ import {
 
 const cart_reducer = (state, action) => {
   if (action.type === ADD_TO_CART) {
-    const { count, book } = action.payload;
-    const newItem = {
-      title: book.title,
-      id: book._id,
-      rating: book.rating,
-      totalReviews: book.totalReviews,
-      imageUrl: book.imageUrl,
-      price: book.price,
-      count,
-    };
-    return { ...state, cart: [...state.cart, newItem] };
+    const { bookId } = action.payload;
+    if (state.cart.indexOf(bookId) > -1) return { ...state };
+    return { ...state, cart: [...state.cart, bookId] };
   }
   if (action.type === REMOVE_CART_ITEM) {
     const tempCart = state.cart.filter((item) => item.id !== action.payload);

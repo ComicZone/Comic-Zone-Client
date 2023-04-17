@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./src/Pages/**/*.{js,jsx}"],
   theme: {
+    fontFamily: {
+      comicy: ["Comicy", "cursive"],
+      monument: ['"Monument Extended"', "sans-serif"],
+    },
     screens: {
       sm: "480px",
       md: "768px",
