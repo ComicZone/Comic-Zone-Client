@@ -24,7 +24,7 @@ const SignUp = () => {
       <div className="h-32 bg-white flex flex-row items-center justify-center"><img className="h-16" src={logo} alt="This is Comic Zone Logo" /></div>
       <div className="h-full flex flex-col md:flex-row justify-center backgroundImage py-20 px-5 md:px-10">
         <div className="w-full md:w-1/2 my-auto">
-          <h1 className="text-6xl md:text-8xl font-extrabold text-left uppercase">Sign-Up To Join The Heros.</h1>
+          <h1 className="text-6xl md:text-8xl font-extrabold font-comicy text-left uppercase">Sign-Up To Join The Heros.</h1>
         </div>
         <div className="w-full md:w-1/2 bg-white/75 max-w-[40rem] p-8 rounded-lg mt-10 md:mt-0">
           <div className="h-[32rem] bg-white max-w-[40rem] rounded-lg p-4">
