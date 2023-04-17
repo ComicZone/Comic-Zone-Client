@@ -22,10 +22,9 @@ const Summary = () => {
 
   const cartTotal = useMemo(
     () =>
-      cartItems.map(v=>Number(v.price.replace('$', ''))).reduce(
-        (accumulator, currentValue) => accumulator + currentValue,
-        0
-      ),
+      cartItems
+        .map((v) => (!v ? 0 : Number(v.price.replace("$", ""))))
+        .reduce((accumulator, currentValue) => accumulator + currentValue, 0),
     [cartItems]
   );
 
@@ -83,7 +82,11 @@ const Summary = () => {
               <p>{`$ ${cartTotal}`}</p>
             </div>
 
-            <CheckoutButton className="summary__btn" amount={cartTotal} />
+            <CheckoutButton
+              isDisabled={cartItems.length <= 0}
+              className="summary__btn"
+              amount={cartTotal}
+            />
           </div>
         </div>
       </div>
