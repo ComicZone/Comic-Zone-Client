@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     font-family: Comic Sans MS;
+    overflow:hidden;
 }
 .summary-cont .summary-prog{
     width: 80%;

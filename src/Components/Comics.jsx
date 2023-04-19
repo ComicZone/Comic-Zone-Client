@@ -1,12 +1,11 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, } from "react";
 import { Link } from "react-router-dom";
 import "../Stylesheets/Comics.css";
-import dead_republic from "../Assests/images/image2.png";
 import { useStoreContext } from "../Context/store_context";
-import { usePreview } from "../Hooks/usePreview";
+
 
 const Comics = () => {
-  const { store, fetchBooks } = useStoreContext();
+  const { store } = useStoreContext();
   const comic = useMemo(() => {
     return store.length > 0 ? store[store.length - 1] : {
     title: "",
@@ -41,7 +40,7 @@ const Comics = () => {
                 <p className="banner-currency">{comic.price}</p>
               </div>
               {/* <button className="banner-btn" onClick={() => preview(comic._id)}> */}
-              <Link className="banner-btn" to={`preview/${comic._id}`}>
+              <Link className="banner-btn" to={comic && `preview/${comic._id}`}>
                 Buy now
               </Link>
               {/* </button> */}

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ErrorImage from "../Assests/images/404.svg";
-import SecondaryButton from "./SecondaryButton";
+import SecondaryButton from "../Components/SecondaryButton";
 
 const Error = () => {
   return (
@@ -10,14 +10,11 @@ const Error = () => {
       <Content>
         <Heading>Oops!</Heading>
         <Content>
- <Text>
-          We are sorry, but we can't find the page you are looking for.
-        </Text>
-        <SecondaryButton> 
-            Back to home
-        </SecondaryButton>
+          <Text>
+            We are sorry, but we can't find the page you are looking for.
+          </Text>
+          <SecondaryButton>Back to home</SecondaryButton>
         </Content>
-       
       </Content>
     </Container>
   );
@@ -27,7 +24,7 @@ export default Error;
 
 const Container = styled.section`
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 4em;
@@ -52,7 +49,6 @@ const Heading = styled.p`
   color: #000000;
 `;
 
-
 const Text = styled.p`
   font-family: "Comic Sans MS";
   font-style: normal;
@@ -61,6 +57,5 @@ const Text = styled.p`
   line-height: 120%;
   max-width: 685px;
 `;
-
 
 const Image = styled.img``;
