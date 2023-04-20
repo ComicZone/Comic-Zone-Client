@@ -3,7 +3,7 @@ import Button from "../Components/Button";
 import Review from "../Components/Reviews/Review";
 import Works from "../Components/Works/Works";
 import Ratings from "../Components/Ratings";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components";
 import { useStoreContext } from "../Context/store_context";
 import { useMemo } from "react";
@@ -25,6 +25,7 @@ function Preview() {
   };
   return (
     <div className={style.Preview}>
+     
       <div className="Home">
         <div className={style.Home}>{/* <h2>Home/Preview</h2> */}</div>
         {!comic ? (
