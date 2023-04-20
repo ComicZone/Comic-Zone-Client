@@ -39,7 +39,7 @@ const SummaryCard = ({ cartItems }) => {
             </div>
           </div>
         ) : (
-          <h2>Loading...</h2>
+          <h2 key={`summary-${val}`}>Loading...</h2>
         );
       })}
     </>

@@ -1,17 +1,17 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import SummaryCard from "../Components/SummaryPage/SummaryCard";
 import { FaArrowRight } from "react-icons/fa";
 import "../Stylesheets/summary.css";
 import CheckoutButton from "../Components/CheckoutButton";
 import { useStoreContext } from "../Context/store_context";
 import { useCartContext } from "../Context/cart_context";
-import PaymentPopup from "../Components/PaymentPopup";
 import { useState } from "react";
+import PaymentPopup from "../Components/PaymentPopup";
 
 const Summary = () => {
   const { store } = useStoreContext();
   const { cart } = useCartContext();
-  const [paymentStatus, setPaymentStatus] = useState("success");
+  const [isSuccessful, setIsSuccessful] = useState(false);
 
   const cartItems = useMemo(
     () =>
@@ -31,74 +31,84 @@ const Summary = () => {
 
   const handleClose = () => {
     document.body.style.overflow = "";
-    setPaymentStatus(null);
+    setIsSuccessful(null);
   };
+
+  useEffect(() => {
+    // setIsSuccessful(null)
+  }, []);
+
 
   return (
     <>
-      {/* <span>Home / preview /Cart </span> */}
-      {paymentStatus ? (
-        <PaymentPopup status={paymentStatus} close={handleClose} />
+      {isSuccessful ? (
+        <PaymentPopup close={handleClose} />
       ) : (
         <div className="summary-cont">
-          <div className="summary-prog">
-            <ul>
-              <li>Cart </li>
-              <li>Order Summary </li>
-              <li>Payment Details </li>
-            </ul>
+          { cart.length <= 0 ? (
+            <h2>No items in your cart...</h2>
+          ) : (
+            <>
+              <div className="summary-prog">
+                <ul>
+                  <li>Cart </li>
+                  <li>Order Summary </li>
+                  <li>Payment Details </li>
+                </ul>
 
-            <div className="underline">
-              <div className="linee"></div>
-            </div>
+                <div className="underline">
+                  <div className="linee"></div>
+                </div>
 
-            <SummaryCard cartItems={cartItems} />
-          </div>
-          <div className="order-summary">
-            <div className="summary__order__cont">
-              <h3 className="summary__head">Order Summary</h3>
-              <hr />
-              <h3 className="apply">Apply Coupon </h3>
-              <form
-                action="#"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                }}
-              >
-                <input type="text" placeholder="Enter coupoun code" />
-                <button>
-                  <FaArrowRight className="icon" />
-                </button>
-              </form>
-              <hr />
-
-              <div className="cart__summary">
-                <h3>Cart Subtotal </h3>
-                <p>Price {`$ ${cartTotal}`}</p>
+                <SummaryCard cartItems={cartItems} />
               </div>
-              <div className="vat__cont">
-                <h3>VAT </h3>
-                <p>
-                  Price {`$ ${0} (`} <span>free</span>
-                  {`)`}
-                </p>
+              <div className="order-summary">
+                <div className="summary__order__cont">
+                  <h3 className="summary__head">Order Summary</h3>
+                  <hr />
+                  <h3 className="apply">Apply Coupon </h3>
+                  <form
+                    action="#"
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                    }}
+                  >
+                    <input type="text" placeholder="Enter coupoun code" />
+                    <button>
+                      <FaArrowRight className="icon" />
+                    </button>
+                  </form>
+                  <hr />
+
+                  <div className="cart__summary">
+                    <h3>Cart Subtotal </h3>
+                    <p>Price {`$ ${cartTotal}`}</p>
+                  </div>
+                  <div className="vat__cont">
+                    <h3>VAT </h3>
+                    <p>
+                      Price {`$ ${0} (`} <span>free</span>
+                      {`)`}
+                    </p>
+                  </div>
+
+                  <hr />
+
+                  <div className="total__checkout">
+                    <h5>Total</h5>
+                    <p>{`$ ${cartTotal}`}</p>
+                  </div>
+
+                  <CheckoutButton
+                    isDisabled={cartItems.length <= 0}
+                    className="summary__btn"
+                    amount={cartTotal}
+                    setIsSuccessful={() => setIsSuccessful(true)}
+                  />
+                </div>
               </div>
-
-              <hr />
-
-              <div className="total__checkout">
-                <h5>Total</h5>
-                <p>{`$ ${cartTotal}`}</p>
-              </div>
-
-              <CheckoutButton
-                isDisabled={cartItems.length <= 0}
-                className="summary__btn"
-                amount={cartTotal}
-                setPaymentStatus={setPaymentStatus}
-              />
-            </div>
-          </div>
+            </>
+          )}
         </div>
       )}
     </>

@@ -2,17 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { usePaystackPayment } from "react-paystack";
 import { converDollarToNaira } from "../Utils/converDollarToNaira";
-import { useNavigate } from "react-router-dom";
-import { useCartContext } from "../Context/cart_context";
 
 const Currency = {
   naira: "NGN",
   dollar: "USD",
 };
 
-// you can call this function anything
 
-// you can call this function anything
 const onClose = () => {
   // implementation for  whatever you want to do when the Paystack dialog closed.
   console.log("closed");
@@ -22,21 +18,18 @@ const CheckoutButton = ({
   amount,
   classname,
   isDisabled,
-  setPaymentStatus,
+  setIsSuccessful,
 }) => {
-  const { clearCart } = useCartContext();
-  const navigate = useNavigate();
+
 
   const onSuccess = (reference) => {
-    clearCart();
-
-    setPaymentStatus("success");
-    navigate("/profile");
+    setIsSuccessful(true);
     // Implementation for whatever you want to do with reference and after success call.
     console.log(reference);
 
     // send transaction reference to backend
   };
+  
   const config = React.useMemo(() => {
     return {
       reference: new Date().getTime().toString(),

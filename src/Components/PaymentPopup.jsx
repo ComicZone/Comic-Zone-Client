@@ -12,21 +12,25 @@ import {
   Top,
 } from "./PaymentPopup.styled";
 import { useNavigate } from "react-router-dom";
+import { useCartContext } from "../Context/cart_context";
 
-const PaymentPopup = ({ status, close }) => {
-
+const PaymentPopup = ({ close }) => {
   const navigate = useNavigate();
+  const { clearCart } = useCartContext();
 
   const handleNavigation = () => {
     close();
-    navigate('/profile');
-  }
+    navigate("/profile");
+    console.log("profile");
+  };
+
   useEffect(() => {
+     clearCart();
     document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = "";
     };
-  },[]);
+  }, []);
   return (
     <>
       <Overlay />
