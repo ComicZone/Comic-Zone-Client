@@ -1,0 +1,37 @@
+.hero-container {
+  background-color: #fff;
+  height: calc(100vh - 4rem);
+}
+
+.hero-container .hero-lead-text {
+  font-family: "Monument Extended";
+  font-size: 90px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.hero-container .hero-sub-text {
+  font-family: "Comic Sans MS";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.hero-container a {
+  background: linear-gradient(117.42deg, #f20505 -49.9%, #ff207e 71.21%);
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 153.911px;
+  font-family: "Comic Sans MS";
+  text-decoration: none;
+  margin: 2rem auto;
+  transition: background 0.3s ease-in-out !important;
+}
+
+.hero-container a:hover {
+  background: linear-gradient(117.42deg, #500606 -49.9%, #41041e 71.21%);
+  color: #fff;
+  text-decoration: none;
+}
