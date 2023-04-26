@@ -67,8 +67,10 @@
 
 .banner-image img {
   width: 100%;
-  width: 100%;
+  height: 100%;
+  object-fit: cover;
   padding: 2rem;
+  border-radius: 0.5rem !important;
 }
 
 .banner-text {
@@ -137,4 +139,13 @@
   text-transform: uppercase;
   max-width: 400px;
   text-align: justify;
+}
+
+
+@media(max-width: 698px){
+  .latest-comics-banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid #131211;
+  }
 }
